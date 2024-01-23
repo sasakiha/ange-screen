@@ -130,3 +130,38 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 }
+.btn-left,
+.btn-right {
+	height: 13vw;
+	width: 15vw;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.btn-left:before,
+.btn-right:before {
+	content: "";
+	width: 1.3em;
+	height: 1.3em;
+	background-size: 6vw 6vw;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.btn-left {
+	border-radius: 0 100px 100px 0;
+}
+.btn-right {
+	border-radius: 100px 0 0 100px;
+}
+.btn-left:before {
+	transform: translate(-0.3em, 0);
+	background-image: url(/images/icon-arrow-l-white.svg?b);
+}
+.btn-right:before {
+	transform: translate(0.3em, 0);
+	background-image: url(/images/icon-arrow-r-white.svg);
+}
+.btn-center {
+	width: 50vw;
+	height: 15vw;
+	border-radius: 100px;
+	background-color: #f16d6d;
+}

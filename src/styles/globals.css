@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+	@apply flex w-full items-center justify-center rounded-full text-5vw font-bold leading-1em;
+	height: 3.5em;
+}
+.btn.pink {
+	@apply bg-red-400 text-white;
+}
+.btn.line {
+	@apply bg-line;
+}
+.image-fit {
+	object-fit: contain;
+	position: relative !important;
+	width: 100% !important;
+}
+.flex-0-0-22vw {
+	flex: 0 0 22vw;
+}
+.flex-0-0-6vw {
+	flex: 0 0 6vw;
+}
+.flex-0-0-19vw {
+	flex: 0 0 19vw;
+}
+.flex-1-1-100\% {
+	flex: 1 1 100%;
+}
+
+/* --------------------------------------------------
+ホーム 
+-------------------------------------------------- */
+.imahima {
+	position: absolute;
+	right: -5px;
+	top: 0;
+	transform: scale(0.85);
+}
+/* --------------------------------------------------
+募集 
+-------------------------------------------------- */
+.seek-label {
+	@apply inline-flex h-2em items-center justify-center rounded-full text-3vw leading-1em text-gray-600;
+}
+.seek-label.type-1 {
+	width: 8em;
+	background-color: #fbe5c5;
+}
+.seek-label.type-2 {
+	width: 8em;
+	background-color: #c2ebe8;
+}
+.seek-label.type-3 {
+	width: 11em;
+	background-color: #bceaf5;
+}
+.seek-label.type-4 {
+	width: 8em;
+	background-color: #dcc5f2;
+}
+.seek-label.type-1:before {
+	content: "今からあそぼ";
+}
+.seek-label.type-2:before {
+	content: "ご飯いきたい";
+}
+.seek-label.type-3:before {
+	content: "予定や希望が合えば";
+}
+.seek-label.type-4:before {
+	content: "同じ趣味募集";
+}
+.seek-eye {
+	display: inline-block;
+	padding-right: 1.7em;
+	background-image: url(/images/eye.png);
+	background-size: 1.4em 1.4em;
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+/* --------------------------------------------------
+メッセージ 
+-------------------------------------------------- */
+.icon-svg {
+	@apply block h-1.2em w-1.2em bg-contain bg-center bg-no-repeat;
+}
+.icon-svg.arrow-r {
+	background-image: url(/images/icon-arrow-r.svg);
+}
+.new-label {
+	@apply absolute block h-0 w-0;
+	top: 1px;
+	right: 0px;
+	border-top: 5.2vw solid orange;
+	border-left: 5.2vw solid transparent;
+	border-right: 5.2vw solid orange;
+	border-bottom: 5.2vw solid transparent;
+}
+.new-label:before {
+	position: absolute;
+	top: -3vw;
+	right: -5vw;
+	content: "NEW";
+	color: white;
+	font-size: 2.6vw;
+	transform: rotate(45deg) scale(0.9);
+}
+/* --------------------------------------------------
+プロフィール
+-------------------------------------------------- */
+.typebtn {
+	background-image: url(/images/typebtn.svg);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.time-bg {
+	@apply flex;
+}
+.time-bg:before {
+	content: "";
+	margin-right: 0.1em;
+	width: 1.3em;
+	height: 1.3em;
+	background-image: url(/images/time.svg?b);
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}

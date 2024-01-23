@@ -57,7 +57,7 @@ const Home: FC<HomeProps> = (props) => {
 											fill
 										/>
 									</div>
-									<div className="flex items-center justify-center pt-2 text-3.5vw">
+									<div className="flex items-center justify-center whitespace-nowrap pt-2 text-3vw">
 										<i className="mr-1 block h-3 w-3 rounded-full bg-green-400"></i>
 										<span>{girl.name}歳</span>
 										<span className="pl-2">{girl.area}</span>

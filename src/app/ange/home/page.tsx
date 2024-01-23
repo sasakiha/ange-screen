@@ -40,7 +40,7 @@ const Home: FC<HomeProps> = (props) => {
 							<div className="relative">
 								<Image
 									className="block rounded-full"
-									src={`/images/${item.id}.jpg`}
+									src={`/images/${item.id}.jpg?a`}
 									width={200}
 									height={200}
 									alt="Next.js"
@@ -55,10 +55,8 @@ const Home: FC<HomeProps> = (props) => {
 										{item.message.length > 23 ? item.message.slice(0, 23) + "…" : item.message}
 									</span>
 									{item.stat === 1 ? (
-										<label className="imahima flex h-11 w-11 items-center justify-center rounded-full bg-orange-500 text-sm leading-none text-white">
-											いま
-											<br />
-											ヒマ
+										<label className="imahima flex h-11 w-11 items-center justify-center rounded-full bg-red-700 text-sm leading-none text-white">
+											NEW
 										</label>
 									) : (
 										""

@@ -41,11 +41,11 @@ const Prof: FC<ProfProps> = (props) => {
 									/>
 								</div>
 								<div className="pb-5 pl-4 pr-4 pt-2">
-									<div className="h-[calc(100vh_-_110px)] overflow-hidden rounded-xl bg-white shadow-md">
+									<div className="h-[calc(100vh_-_75px)] overflow-hidden rounded-xl bg-white shadow-md">
 										<div className="relative h-[calc(100vw_-_2rem)] w-full">
 											<Image
 												className="block"
-												src={`/images/prof/prof_${item.id}.jpg?a`}
+												src={`/images/prof/prof_${item.id}.jpg?ab`}
 												alt="Next.js"
 												priority
 												fill
@@ -58,10 +58,10 @@ const Prof: FC<ProfProps> = (props) => {
 													(index) => (
 														<React.Fragment key={`${item.id}-${index}`}>
 															{index > 1}
-															<span className="h-16vw w-16vw relative mr-3">
+															<span className="h-15vw w-16vw relative mr-3 block">
 																<Image
 																	className="block rounded-full"
-																	src={`/images/prof/prof_${item.id}-${index}.jpg`}
+																	src={`/images/prof/prof_${item.id}-${index}.jpg?ab`}
 																	alt="Next.js"
 																	sizes="200"
 																	fill
@@ -80,19 +80,37 @@ const Prof: FC<ProfProps> = (props) => {
 											<span className="pl-2 text-4.5vw font-bold">{item.age}歳</span>
 											<span className="pl-2 text-4.5vw font-bold">{item.area}</span>
 										</div>
-										<div className="relative mx-6 my-3 flex items-center justify-between">
-											<span className="c">24時間以内</span>
-											<span className="c">いいね</span>
+										<div className="relative mx-6 my-3 flex items-center justify-between text-gray-500">
+											<span className="prof-online inline-flex items-center justify-center">
+												オンライン
+											</span>
+											<span className="prof-iine flex items-center justify-center">
+												いいね！数 :？
+											</span>
 										</div>
 
-										<div className="mx-5 mb-4 mt-6 border-t border-gray-300 pb-2 pt-4">
+										<div className="mx-1 mt-6 border-t border-gray-300 px-5 pb-2 pt-4">
 											<Image
 												className="block rounded-lg"
 												src={`/images/_okonomi.png`}
 												alt="Next.js"
-												height="45"
-												width="180"
+												height="40"
+												width="160"
 											/>
+										</div>
+										<div className="mx-1 mb-2 border-b border-gray-300 px-5 pb-2 pt-4 text-gray-500">
+											{item.name}さんの好きなタイプ・価値観が
+											<br />
+											あなたとマッチしました！
+											<div className="relative w-full">
+												<Image
+													className="block"
+													src={`/images/_hitogara.png`}
+													alt="Next.js"
+													height="40"
+													width="500"
+												/>
+											</div>
 										</div>
 										<div className="mx-4 my-5 block text-4vw text-gray-500">
 											{item.message.split("¥n").map((line, index) => (

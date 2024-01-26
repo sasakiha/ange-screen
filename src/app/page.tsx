@@ -20,6 +20,16 @@ const Top: FC<TopProps> = (props) => {
 			link: "/ange/search",
 			name: "検索",
 		},
+		{
+			id: "store",
+			link: "/ange/store",
+			name: "ストア",
+		},
+		{
+			id: "detail",
+			link: "/ange/detail",
+			name: "プロフ詳細",
+		},
 	];
 	return (
 		<>

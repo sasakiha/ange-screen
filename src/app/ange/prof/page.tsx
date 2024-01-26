@@ -58,7 +58,7 @@ const Prof: FC<ProfProps> = (props) => {
 													(index) => (
 														<React.Fragment key={`${item.id}-${index}`}>
 															{index > 1}
-															<span className="h-15vw w-16vw relative mr-3 block">
+															<span className="relative mr-3 block h-15vw w-16vw">
 																<Image
 																	className="block rounded-full"
 																	src={`/images/prof/prof_${item.id}-${index}.jpg?ab`}

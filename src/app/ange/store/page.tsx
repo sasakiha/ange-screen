@@ -1,5 +1,5 @@
 "use client";
-// import Footer from "@/app/ange/store/footer";
+import Footer from "@/app/ange/store/footer";
 import Image from "next/image";
 import { FC } from "react";
 import "swiper/css";
@@ -35,7 +35,7 @@ const Store: FC<StoreProps> = (props) => {
 					{/* Add more SwiperSlide components as needed */}
 				</Swiper>
 			</main>
-			{/* <Footer /> */}
+			<Footer />
 		</>
 	);
 };
